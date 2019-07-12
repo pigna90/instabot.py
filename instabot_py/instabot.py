@@ -949,7 +949,7 @@ class InstaBot:
                                     break
 
                     if keyword_found is False:
-                        self.write_log(
+                        self.logger.debug(
                             f"Won't follow {username}: does not meet keywords requirement. Keywords not found."
                         )
                         return
